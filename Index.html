@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Cedric Rahbari Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #838383;
+      padding: 25px;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Portfolio</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-folder-open"> Projets
+              <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="Projets.html">Personnels</a></li>
+            </ul>
+          </li>
+	      <li><a href="CV.pdf"><span class="glyphicon glyphicon-info-sign"> CV</a></li>
+        <li><a href="Creations.html"><span class="glyphicon glyphicon-film"> Créations</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="Contact.html">Contact  <span class="glyphicon glyphicon-envelope"></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron">
+  <div class="container text-justify">
+    <h1 class="text-center">Portfolio</h1><br>
+    <p>Bonjour, je m'appelle <strong>Cedric Rahbari</strong>, je suis <strong>Professeur des Ecoles</strong> depuis 4 ans. Je me suis formé à la programmation informatique en autodidacte afin de <strong>développer des jeux vidéos</strong>. Au cours de mon apprentissage, j'ai été amené à me familiariser avec divers langages de programmation, et plus particulièrement le <strong>C++</strong>, le <strong>C#</strong> ainsi que le <strong>Blueprint</strong>. J'ai pu ainsi réaliser différents projets personnels dans des domaines variés tels que le <strong>jeu vidéo RPG interactif </strong>, ou encore, <strong>un jeu de tir en multijoueur</strong>.</p>
+    <p>Vous pouvez retrouver mes différents projets sur ce site : pour mon projet <strong>RPG interactif sous Unity3D</strong> ; <a href="ChooseYourAdventure.html"><strong>ici</strong></a>, pour mon projet de jeu de tir en <strong>multijoueur sous Unreal Engine 5<strong> ; <a href=CursedLovers.html><strong>là</strong></a>.</p>
+    <p>Je suis aussi un peu cinéphile, et me plais à écrire ou réaliser des <a href="Creations.html"><strong>scénarios</strong></a>, ainsi qu'à effectuer leurs montages sous <strong>Adobe Premiere Pro</strong>.</p>
+  </div>
+</div><br>
+<h1 class="text-center">Projets</h1><br>
+  <div class="container-fluid text-center">
+    <div class="row">
+      <div class="col-sm-2"></div>
+      <div class="col-sm-8">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="item active">
+              <div class="carousel-caption" style="outline-color:black; text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;color:white; text-align: center;">
+                <h3>ChooseYourAdventure</h3>
+                <p>Unity3D</p>
+              </div>
+              <a href="ChooseYourAdventure.html">
+                <img class="img-responsive" src="ScreenshotRPG/PhotoChienvaliers.png" alt="">
+              </a>
+            </div>
+
+            <div class="item">
+              <div class="carousel-caption" style="outline-color:black;text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;color:white; text-align: center;">
+                <h3>CursedLovers</h3>
+                <p>UnrealEngine5</p>
+              </div>
+              <a href="CursedLovers.html">
+                <img class="img-responsive" src="ScreenshotCursedLovers/Cl_aiming.png" alt="">
+              </a>
+            </div>
+
+            <div class="item">
+              <div class="carousel-caption" style="outline-color:black;text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;color:white; text-align: center;">
+                <h3>Creations</h3>
+                <p>Olympe</p>
+              </div>
+              <a href="Creations.html">
+                <img class="img-responsive" src="ScreenshotOlympe/HadesZeusPos.jpg" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+     </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid bg-3 text-center">    
+  <h3>Projets</h3><br>
+  <div class="row">
+    <div class="col-sm-6">
+      <a href="ChooseYourAdventure.html">
+      <p><strong>Projet Unity3D</strong></p>
+      <img src="ScreenshotRPG/Escorte.png" class="img-responsive" style="width:100%" alt="Image">
+      </a>
+    </div>
+    <div class="col-sm-6"> 
+      <a href="CursedLovers.html">
+      <p><strong>Projet UnrealEngine5</strong></p>
+      <img src="ScreenshotCursedLovers/Cl_globalView.png" class="img-responsive" style="width:100%" alt="Image">
+    </a>
+    </div>
+  </div>
+</div><br>
+
+ <footer class="container-fluid text-center">
+    Me contacter - <a href="mailto:cedric.rahbari@gmail.com">cedric.rahbari@gmail.com</a> - <a href="tel:+33647894783">06.47.89.47.83</a>
+  </footer>
+
+</body>
+</html>
